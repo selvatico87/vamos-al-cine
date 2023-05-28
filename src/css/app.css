@@ -1,0 +1,140 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: top 0.3s;
+  z-index: 9999;
+}
+header.hidden {
+  top: -100px; /* Oculta el header moviéndolo fuera de la ventana */
+}
+
+main {
+  margin-top: 100px; /* Espacio para el header */
+}
+body{
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Allerta', sans-serif;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.pagination button{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.card{
+  margin-bottom: 10px;
+}
+.div_card-img-top{
+  max-width: 100%;
+  max-height: 80%;
+  align-items: center;
+  align-content: center;
+}
+.nav-lista li{
+  display: flex;
+  align-items: left;
+}
+.nav-item{
+  text-decoration: underline;
+  transition: 1s;
+ }
+.nav-item:hover{
+ text-decoration: underline solid white;
+}
+.favorite-btn{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+}
+.favorite-btn-detail{
+  background-color: white;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.position-top-movies{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: none;
+}
+.logoPrincipal{
+  max-width: 200px;
+  height: auto;
+}
+
+.logosProductoras{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 10px;
+}
+.logoProductora{
+  margin-bottom: -10px;
+  width: 100px;
+  height: auto;
+}
+footer{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+  color: white;
+}
+.login{
+  display: flex;
+  align-items: center;
+}
+footer h2{
+  font-size: 0.8em;
+}
+/* #caja-footer{
+  display: flex;
+  align-items: center;
+} */
+ #cajita-logos-footer{
+  width: 100%;
+  align-content: center;
+  justify-content: space-around;
+} 
+.logos-footer{
+  max-width: 50px;
+  max-height: 50px;
+  display: inline-block; 
+  transition: 1s all;
+  margin: 5px 5px;
+}
+.logos-footer:hover{
+  transform: scale(1.2);
+}
