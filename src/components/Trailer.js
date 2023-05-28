@@ -10,7 +10,7 @@ function Trailer() {
   useEffect(() => {
     const fetchTrailerData = async () => {
       try {
-        const endPoint = `http://api.themoviedb.org/3/movie/${movieID}/videos?api_key=c963b2c1865802b4fc57f70679b6a724&language=es-ES`;
+        const endPoint = `https://api.themoviedb.org/3/movie/${movieID}/videos?api_key=c963b2c1865802b4fc57f70679b6a724&language=es-ES`;
         const response = await axios.get(endPoint);
         const movieDataTrailer = response.data;
         setTrailer(movieDataTrailer);

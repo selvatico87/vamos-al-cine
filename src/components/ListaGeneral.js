@@ -11,7 +11,7 @@ function ListaGeneral(props) {
   }, [currentPage]);
 
   const fetchData = (page) => {
-    const endPoint = `http://api.themoviedb.org/3/discover/movie?api_key=c963b2c1865802b4fc57f70679b6a724&language=es-ES&page=${page}`;
+    const endPoint = `https://api.themoviedb.org/3/discover/movie?api_key=c963b2c1865802b4fc57f70679b6a724&language=es-ES&page=${page}`;
     axios
       .get(endPoint)
       .then((response) => {
