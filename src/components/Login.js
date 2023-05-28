@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { Alert, AlertTitle } from '@mui/material';
 import Tickets from '../img/10.png'
 
